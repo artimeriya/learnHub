@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>LearnHub</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            box-sizing: border-box;
+            background: antiquewhite;
+            text-align: center;
+        }
+        /*---Header Property---*/
+        header.l{
+            padding: 5px;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: space-between;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 2;
+            }
+        }
+        nav a{
+             box-shadow: 2px;
+             
+            
+        }
+        nav a:hover{
+            border-radius: 5px;
+            padding: 3px;
+            background: lightgray;
+            color: black;  
+        }
+        /*---Main---*/
+        header.h{
+           
+            text-align: center;
+            margin: 30px;
+            background: linear-gradient(to right, rgb(36, 28, 143), rgb(78, 3, 107));
+            color: aliceblue;
+            padding: 20px;
+            padding-left: 80px;
+            padding-right: 80px;
+            border-radius: 20px;
+            animation: zoomIn 1s ease-in-out;
+            .b{
+                border-radius: 5px;
+                background: white;
+                padding: 10px;
+            }
+            .b:hover{
+            
+                cursor: pointer;
+                box-shadow: 5px 2px 5px rgb(237, 237, 237);
+                transform: scale(2.05);
+            }
+        }
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.3);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+        main{
+            div{
+                justify-content: space-around;
+                padding: 2px;
+                border-radius: 5px;
+            }
+        }
+        h2{
+            margin-bottom: 40px;
+        }
+        div.c{
+            display: flex;
+            justify-content: space-around;
+            .card{
+                background-color: aliceblue;
+                height: auto;
+                width: 300px;
+                padding: 20px;
+                margin: 2px;
+                border-radius: 10px;
+                transition: 0.3s;
+                animation: bounceIn 3s ease-in-out;
+               
+                }
+            }
+            .card:hover{
+                box-shadow: 2px 2px 5px gray;
+                transform: scale(1.05);
+            }
+            @keyframes bounceIn {
+                0% {
+                    transform: scale(0.10);
+                    opacity: 0;
+                }
+                50% {
+                    transform: scale(1.1);
+                    opacity: 1;
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+            .u{
+                size-adjust: inherit;
+            }
+            h4{
+                font-size: 20px;
+            }
+            .o{
+            display:flex;
+            margin: 20px;
+            background:azure;
+            justify-content: space-around;
+            animation: zoomIn 1s ease-in-out;
+            .f{
+                color: blue;
+                font-size: larger;
+                font-weight: bolder;
+            }
+        }
+       
+        .o:hover{
+                box-shadow: 2px 2px 5px gray;
+                transform: scale(1.05);
+            }
+        footer{
+            background: cadetblue;
+            font-size: larger;
+            color: white;
+            padding: 20px;
+            animation: linearFade 2s ease-in-out;
+        }
+        @keyframes linearFade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="l">
+        <header>&#128214;&nbsp;LearnHub</header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="course.html">Courses</a>
+                <a href="enrollment.html">Enroll</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+    </header>
+    <main>
+        <header class="h">
+            <h1>Learn New Skills Online</h1>
+            <p>
+                Start yout learning journey with our expert-led courses
+            </p><br>
+            <a class="b" href="course.html">Explore Courses</a>
+        </header>
+        
+            <h2>Why Choose LearnHub?</h2>
+            <div>
+            <div class="c">
+                <div class="card">
+                    <p class="u">&#128100;&#127822;&#128218;</p>
+                    <h4>Expert Instructions</h4> 
+                    <p>
+                        Learn from industry professionals with years of experience
+                    </p>
+                </div>
+
+                <div class="card">
+                    <p class="u">&#9200;</p>
+                    <h4>Learn at Yout Pace</h4> 
+                    <p>
+                        Study anytime,anywhere with lifetime access to courses
+                    </p>
+                </div>
+
+                <div class="card">
+                    <p class="u">&#127891;</p>
+                    <h4>Get Certified</h4> 
+                    <p>
+                        Earn certificates upon completion to showcase your skills
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <aside>
+            <div class="o">
+                <div>
+                    <div class="f">50+</div>
+                    <p>Courses Available</p>
+                </div>
+
+                <div>
+                    <div class="f">10,000+</div>
+                    <p>Students Enrolled</p>
+                </div>
+
+                <div>
+                    <div class="f">25+</div>
+                    <p>Expert Instructions</p>
+                </div>
+
+                <div>
+                    <div class="f">95%</div>
+                    <p>Success Rate</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy;LearnHub. All rights reserved</p>
+        Email:
+        <a href="mailto:info@learnhub.com">info@learnhub.com</a>
+        | Phone:+91 8758592992
+    </footer>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            box-sizing: border-box;
+            background: rgb(219, 212, 204);
+                   
+        }
+        /*---Header Property---*/
+        header.l{
+            padding: 5px;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: space-between;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        nav a{
+             box-shadow: 2px;
+               
+        }
+        /*---Main---*/
+        .h{
+            margin-top: 5px;
+            text-align: center;
+            background: cornflowerblue;
+            padding: 20px;
+            animation: fadeup 1s ease-in-out;
+        }
+        @keyframes fadeup {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        header.h2{
+            color: darkblue;
+        }
+        main .a,.b{
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+            padding: 2px;
+            border-radius: 5px;
+            animation: fadeIn 2s ease-in-out;
+           
+        }
+       @keyframes fadeIn   {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .card{
+            background: azure;
+            height: 55ch;
+            width: 25ch;
+            padding: 9px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+        /*---Icons---*/
+        .ic1{
+            font-size: 80px;
+            border-radius: 10px 10px 0px 0px;
+            text-align: center;
+            margin: -8px;
+            padding: 35px;
+            background: linear-gradient(to left, rgb(100, 93, 195), rgb(78, 3, 107));
+        }
+        .ic2{
+            font-size: 80px;
+            border-radius: 10px 10px 0px 0px;
+            text-align: center;
+            margin: -8px;
+            padding: 35px;
+            background: linear-gradient(to left, rgb(239, 149, 221), rgb(177, 16, 115));
+        }
+        .ic3{
+            font-size: 80px;
+            border-radius: 10px 10px 0px 0px;
+            text-align: center;
+            margin: -8px;
+            padding: 35px;
+            background: linear-gradient(to left, rgb(17, 71, 125), rgb(113, 187, 232));
+        }
+        .ic4{
+            font-size: 80px;
+            border-radius: 10px 10px 0px 0px;
+            text-align: center;
+            margin: -8px;
+            padding: 35px;
+            background: linear-gradient(to left, rgb(225, 217, 121), rgb(78, 3, 107));
+        }
+        .ic5{
+            font-size: 80px;
+            border-radius: 10px 10px 0px 0px;
+            text-align: center;
+            margin: -8px;
+            padding: 35px;
+            background: linear-gradient(to left, rgb(75, 139, 249), rgb(23, 2, 117));
+        }
+        .ic6{
+            font-size: 80px;
+            border-radius: 10px 10px 0px 0px;
+            text-align: center;
+            margin: -8px;
+            padding: 35px;
+            background: linear-gradient(to left, rgb(147, 213, 233), rgb(192, 175, 191));
+        }
+        
+        .c{
+            display:flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        p{
+            font-size: 16px;
+            color: black;
+        }
+        .p{
+             color: darkblue;
+            padding: 2px;
+            padding-left: 9px;
+            margin-top: 20px;
+            border-radius: 10px;
+            width: 20ch;
+            background: lightskyblue;
+        }
+        .f{
+            background: deepskyblue;
+            padding: 4px;
+            text-align: center;
+            border-radius: 2px;
+        }
+        .f:hover{
+            background: rgb(171, 214, 247);
+            cursor: pointer;
+        }
+        h5{
+            color: darkgreen;
+            font-size: 20px;
+        }
+        /*---Footer---*/
+         footer{
+            background: cadetblue;
+            font-size: larger;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: linearFade 2s ease-in-out;
+        }
+        @keyframes linearFade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="l">
+        <header>&#128214;&nbsp;LearnHub</header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="course.html">Courses</a>
+                <a href="enrollment.html">Enroll</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+    </header>
+    <main>
+        <header class="h">
+            <h2>Available Courses</h2>
+            <p>
+                Explore our wide range of courses designed to help you achieve your learning goals.
+            </p>
+        </header>
+        <div class="a">
+            <div class="card">
+                <p class="ic1">&#x1F4BB;</p>
+                <p class="p">Web Development</p>
+                <h4>Complete Web Development Course</h4>
+                <p>
+                    Learn HTML, CSS, JavaScript, and modern web technologies from scratch.
+                </p>
+                <div class="c">
+                    <h6>&#x23F0;11 Weeks</h6>
+                    <h5>&#8377;2,999</h5>
+                </div>
+                    <div class="f">Enroll Now</div>
+                
+            </div>
+            <div class="card">
+                <p class="ic2">&#x1F40D;</p>
+                <p class="p">Programming</p>
+                <h4>Python Programming Masterclass</h4>
+                <p>
+                    Master Python programming from basics to advanced concepts.
+                </p>
+                <div class="c">
+                    <h6>&#x23F0;5 Weeks</h6>
+                    <h5>&#8377;2,499</h5>
+                </div>
+                    <div class="f">Enroll Now</div>
+            
+            </div>
+            <div class="card">
+                <p class="ic3">&#128202;</p>
+                <p class="p">Data Science</p>
+                <h4>Data Science Fundamentals</h4>
+                <p>
+                    Learn data analysis, visualization and machine learning basics.
+                </p>
+                <div class="c">
+                    <h6>&#x23F0;10 Weeks</h6>
+                    <h5>&#8377;3,499</h5>
+                </div>
+                    <div class="f">Enroll Now</div>
+            </div>
+        </div>
+
+         <div class="b">
+            <div class="card">
+                <p class="ic4">&#x1F4F1;</p>
+                <p class="p">Mobile Development</p>
+                <h4>Mobile App Development</h4>
+                <p>
+                    Build mobile apps IOS and Android using React Native.
+                </p>
+                <div class="c">
+                    <h6>&#x23F0;12 Weeks</h6>
+                    <h5>&#8377;3,999</h5>
+                </div>
+                    <div class="f">Enroll Now</div>
+                
+            </div>
+            <div class="card">
+                <p class="ic5">&#127912;</p>
+                <p class="p">Design</p>
+                <h4>UI/UX Design Complete Course</h4>
+                <p>
+                    Learn user interface and user experience design principles.
+                </p>
+                <div class="c">
+                    <h6>&#x23F0;11 Weeks</h6>
+                    <h5>&#8377;2,799</h5>
+                </div>
+                    <div class="f">Enroll Now</div>
+            </div>
+            <div class="card">
+                <p class="ic6">&#11036;</p>
+                <p class="p">AI & ML</p>
+                <h4>Artificial Intelligence Basics</h4>
+                <p>
+                    Instruction to AI, machine learning and neutral networks.
+                </p>
+                <div class="c">
+                    <h6>&#x23F0;10 Weeks</h6>
+                    <h5>&#8377;4,499</h5>
+                </div>
+                    <div class="f">Enroll Now</div>
+            </div>
+        </div>
+    </main>
+      <footer>
+        <p>&copy;LearnHub. All rights reserved</p>
+        Email:
+        <a href="mailto:info@learnhub.com">info@learnhub.com</a>
+        | Phone:+91 8758592992
+    </footer>
+</body>
+</html>

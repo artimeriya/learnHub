@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            box-sizing: border-box;
+            background: rgb(215, 172, 172);
+            justify-content: center;
+        }
+        /*---Header Property---*/
+        header.l{
+            padding: 5px;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: space-between;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 2;
+            }
+        }
+        
+        nav a{
+             box-shadow: 2px; 
+        }
+        a:hover{
+            border-radius: 5px;
+            padding: 3px;
+            background: lightgray;
+            color: black;  
+        }
+        /*---Main Property---*/
+        main{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            width: 100%;
+        }
+        
+        h2{
+            color: black;
+            text-align: center;
+        }
+        .a,.b{
+            width: 40%;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid gray;
+            box-shadow: 1px 1px 1px gray;
+            background: wheat;
+            animation: float 3s ease-in-out ;
+        }
+
+        @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-10px); }
+                100% { transform: translateY(0px); }
+        }
+        label{
+            font-weight: bold;
+            font-size: larger;
+            margin-left: -5px;
+            padding: 5px;
+        }
+        .mail,.phone,.address,.hours{
+            margin: 5px;
+            margin-top: 10px;
+            background: whitesmoke;
+            border-radius: 5px;
+            padding: 5px;
+            color: black;
+            font-weight: 300;
+
+        }
+        form{
+            input,select,textarea{
+                width: 95%;
+                padding: 5px;
+                font-weight: bolder;
+            }
+            
+        }
+        button{
+            background: dodgerblue;
+            text-align: center;
+            padding: 5px;
+            width: 60%;
+             border-radius: 5px;
+        
+        }
+       button:hover{
+            background: deepskyblue;
+            cursor: pointer;
+       }
+        footer{
+            background: cadetblue;
+            font-size: larger;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: linearFade 2s ease-in-out;
+        }
+        @keyframes linearFade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="l">
+        <header>&#128214;&nbsp;LearnHub</header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="course.html">Courses</a>
+                <a href="enrollment.html">Enroll</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+    </header>
+    <main>
+        <div class="a">
+            <h2>Get In Touch</h2>
+            <p>
+                Have questions? We'd love to hear from you. Send us a message
+                and we'll response as soon as possible.
+            </p>
+            <div class="mail">
+                <label>&#128231;Email</label><br>
+                <a href="mailto:arumeriya@gmail.com">arumeriya@gmail.com</a><br>
+                <a href="mailto:support@learnhub.com">support@learnhub.com</a>
+            </div>
+            <div class="phone">
+                <label>&#128222;Phone</label>
+                <p>+91 8758592992</p>
+                <time>Mon-Fri 9am-6pm</time>
+            </div>
+            <div class="address">
+                <label>&#128205;Address</label>
+                <p>
+                    Lambey Hanuman,<br>
+                    Sardar Nagar,<br>
+                    Bhavnagar, Gujarat,<br>
+                    India - 364002
+                </p>
+            </div>
+            <div class="hours">
+                <label>&#9200;Business Hours</label>
+                <p>
+                    Monday - Friday: 9:00 AM to 6:00 PM<br>
+                    Saturday: 10:00 AM to 4:00 PM<br>
+                    Sunday: Closed
+            </div>
+        </div>
+        <div class="b">
+            <h2>Send Us a Message</h2>
+            <form>
+                <label>Your Name</label><br>
+                <input type="text" placeholder="Enter your name"><br><br>
+                <label>Your Email</label><br>
+                <input type="email" placeholder="Enter your email"><br><br>
+                <label>Subject</label><br>
+                <select>
+                    <option>Select Subject</option>
+                    <option>General Inquiry</option>
+                    <option>Course Information</option>
+                    <option>Technical Support</option>
+                    <option>Feedback</option>
+                </select><br><br>
+
+                <label>Your Message</label><br>
+                <textarea rows="5" cols="30" placeholder="Write your message here"></textarea><br><br>
+                <center>
+                <button type="submit">Send Message</button>
+                </center>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;LearnHub. All rights reserved</p>
+        Email:
+        <a href="mailto:info@learnhub.com">info@learnhub.com</a>
+        | Phone:+91 8758592992
+    </footer>
+</body>
+</html>
