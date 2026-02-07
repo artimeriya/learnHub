@@ -8,18 +8,16 @@
         *{
             margin: 0px;
             padding: 0px;
-            height: auto;
-            width: auto;
         }
         body{
             box-sizing: border-box;
-            background: antiquewhite;
+            background:lavenderblush;
             text-align: center;
         }
         /*---Header Property---*/
         header.l{
             padding: 5px;
-            background-color: cadetblue;
+            background-color: darkgrey;
             display: flex;
             justify-content: space-between;
             animation: fadeIn 2s ease-in-out;
@@ -32,9 +30,11 @@
             to {
                 opacity: 2;
             }
+            
         }
         nav a{
-             box-shadow: 2px;
+            box-shadow: 2px;
+            
              
             
         }
@@ -48,20 +48,21 @@
         header.h{
            
             text-align: center;
-            margin: 3px;
-            background: linear-gradient(to right, rgb(36, 28, 143), rgb(78, 3, 107));
-            color: aliceblue;
-            padding: 10px;
+            margin: 30px;
+            background: rgb(161, 184, 184);
+            color: black;
+            padding: 20px;
             padding-left: 80px;
             padding-right: 80px;
+            padding-bottom: 30px;
             border-radius: 20px;
             animation: zoomIn 1s ease-in-out;
+            
             .b{
+                color: black;
                 border-radius: 5px;
-                background: white;
+                background: rgb(110, 132, 230);
                 padding: 10px;
-                margin:5px;
-                margin-bottom:20px;
             }
             .b:hover{
             
@@ -89,48 +90,34 @@
             margin-bottom: 40px;
         }
         div.c{
-           
-           display:grid;
+            display: flex;
+            justify-content: space-around;
             .card{
-                justify-content:center;
-                background-color: aliceblue;
+                background-color: honeydew; 
                 height: auto;
-                width: auto;
-                padding: 10px;
-                margin: 5px;
+                width: 300px;
+                padding: 20px;
+                margin: 2px;
                 border-radius: 10px;
                 transition: 0.3s;
-                animation: bounceIn 3s ease-in-out;
-               
+                animation: bounceIn 1s ease-in-out;
                 }
             }
             @keyframes bounceIn {
-                    from {
-                        transform: scale(0.5);
-                        opacity: 0;
-                    }
-                    to {
-                        transform: scale(1);
-                        opacity: 1;
-                    }
+                from {
+                    transform: scale(0.5);
+                    opacity: 0;
                 }
+                to {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
             .card:hover{
                 box-shadow: 2px 2px 5px gray;
                 transform: scale(1.05);
             }
-            @keyframes bounceIn {
-                0% {
-                    transform: scale(0.10);
-                    opacity: 0;
-                }
-                50% {
-                    transform: scale(1.1);
-                    opacity: 1;
-                }
-                100% {
-                    transform: scale(1);
-                }
-            }
+           
             .u{
                 size-adjust: inherit;
             }
@@ -140,11 +127,11 @@
             .o{
             display:flex;
             margin: 20px;
-            background:azure;
+            background:lavender;
             justify-content: space-around;
             animation: zoomIn 1s ease-in-out;
             .f{
-                color: blue;
+                color: rgb(9, 9, 100);
                 font-size: larger;
                 font-weight: bolder;
             }
@@ -155,9 +142,9 @@
                 transform: scale(1.05);
             }
         footer{
-            background: cadetblue;
+            background: darkgray;
             font-size: larger;
-            color: white;
+            color: black;
             padding: 20px;
             animation: linearFade 2s ease-in-out;
         }
@@ -180,6 +167,7 @@
                 <a href="enrollment.html">Enroll</a>
                 <a href="contact.html">Contact</a>
             </nav>
+            
     </header>
     <main>
         <header class="h">
@@ -250,19 +238,4 @@
         | Phone:+91 8758592992
     </footer>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
